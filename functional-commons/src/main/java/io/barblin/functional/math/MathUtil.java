@@ -18,7 +18,7 @@ public class MathUtil {
     public static final Function<String, Optional<Integer>> toInt = s -> {
         try {
             return Optional.of(Integer.parseInt(s));
-        } catch (NumberFormatException ex){/*  */
+        } catch (NumberFormatException ex){
             return Optional.empty();
         }
     };

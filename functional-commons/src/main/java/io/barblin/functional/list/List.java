@@ -3,9 +3,12 @@ package io.barblin.functional.list;
 import io.barblin.functional.math.MathUtil;
 import io.barblin.functional.string.StringUtil;
 
+import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class List {
@@ -35,4 +38,7 @@ public class List {
                 .filter(StringUtil.isEmpty)
                 .map(s -> StringUtil.splitToList.apply(s).apply(split));
     }
+
+    public static final Function<Stream<String>, LinkedList<String>> toLinkedList = list ->
+            list.collect(Collectors.toCollection(LinkedList::new));
 }

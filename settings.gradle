@@ -8,5 +8,5 @@
  * This project uses @Incubating APIs which are subject to change.
  */
 
-rootProject.name = 'functional-commons'
+rootProject.name = 'func-prog-commons-lib'
 include('functional-commons')

@@ -1,4 +1,4 @@
-package io.barblin.functional;
+package io.barblin.functional.math;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
